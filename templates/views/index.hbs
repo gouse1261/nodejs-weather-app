@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        {{!-- <title>{{title}}</title> --}}
+        
+    </head>
+    <body>
+        {{>header}}
+        <h1>Welcome to Home Page {{userName}}!</h1>
+
+        <form>
+            <input type="text" placeholder="city"/>
+            <button>Get Weather</button>
+        </form>
+        <p id="errorMsg"></p>
+        <p id="weatherInfo"></p>
+        {{>footer}}
+        <script src='/js/using-fetch.js'></script>
+    </body>
+</html>
